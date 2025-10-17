@@ -68,9 +68,9 @@ const SignIn = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col lg:flex-row">
       {/* Left Side - Form */}
-      <div className="flex-1 flex flex-col lg:justify-center px-4 sm:px-6 lg:px-8 xl:px-12 py-8 lg:py-12 lg:pl-[135px]">
+      <div className="flex-1 flex flex-col lg:justify-center px-4 sm:px-6 lg:px-8 xl:px-12 pt-20 pb-8 lg:py-12 lg:pl-[135px]">
         {/* Logo */}
-        <div className="absolute top-[40px] left-0 lg:left-[183px] flex items-center gap-3 pt-[4px] lg:mb-12">
+        <div className="absolute top-4 left-4 lg:top-[40px] lg:left-[183px] flex items-center gap-3 pt-[4px] lg:mb-12">
           <img src={logoImage} alt="Maglo Logo" className="w-[30px] h-[30px]" />
           <span className="font-['Gordita'] font-bold text-lg text-[#1a1a1a]">
             Maglo.
@@ -78,18 +78,18 @@ const SignIn = () => {
         </div>
 
         {/* Form Container */}
-        <div className="w-full justify-center items-center  max-w-md mx-auto lg:mx-0 lg:max-w-lg lg:ml-[135px]">
-          <div className="mb-8">
-            <h2 className="font-['Kumbh_Sans'] font-semibold text-[30px] leading-[100%] text-[#1a1a1a] mb-2">
+        <div className="w-full justify-center items-center max-w-md mx-auto lg:mx-0 lg:max-w-lg lg:ml-[135px]">
+          <div className="mb-6 lg:mb-8">
+            <h2 className="font-['Kumbh_Sans'] font-semibold text-2xl sm:text-[30px] leading-[100%] text-[#1a1a1a] mb-2">
               Sign In
             </h2>
-            <p className="font-['Kumbh_Sans'] font-normal text-[16px] leading-[100%] text-[#78778B]">
+            <p className="font-['Kumbh_Sans'] font-normal text-sm sm:text-[16px] leading-[100%] text-[#78778B]">
               Welcome back! Please enter your details
             </p>
           </div>
 
-          <form className="space-y-6" onSubmit={handleSubmit}>
-            <div className="space-y-4">
+          <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+            <div className="space-y-3 sm:space-y-4">
               <div>
                 <label
                   htmlFor="email"
@@ -139,7 +139,7 @@ const SignIn = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <Button
                 type="submit"
                 variant="primary"
